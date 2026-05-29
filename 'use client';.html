@@ -1,0 +1,154 @@
+'use client';
+
+import { ContactSection } from '@/components/sections/ContactSection';
+import { FAQ } from '@/components/sections/FAQ';
+import { Features } from '@/components/sections/Features';
+import { Architecture } from '@/components/sections/Architecture';
+import { ChannelLineup } from '@/components/sections/ChannelLineup';
+import { Footer } from '@/components/layout/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { Industries } from '@/components/sections/Industries';
+import { Navbar } from '@/components/layout/Navbar';
+import { PartnersMarquee } from '@/components/sections/PartnersMarquee';
+import { ScrollReveal } from '@/components/animations/ScrollReveal';
+import { useScrollProgress } from '@/hooks/useScrollProgress';
+import { CustomCursor } from '@/components/ui/CustomCursor';
+
+export default function HomePageClient() {
+  useScrollProgress();
+
+  return (
+    <div className="relative overflow-hidden">
+      <CustomCursor />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[540px] bg-hero-glow blur-3xl opacity-40" />
+      <Navbar />
+      <main className="relative isolate">
+        <Hero />
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <Features />
+          </ScrollReveal>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <Architecture />
+          </ScrollReveal>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <Industries />
+          </ScrollReveal>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <ChannelLineup />
+          </ScrollReveal>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <PartnersMarquee />
+          </ScrollReveal>
+        </section>
+        {/* Simple, Transparent Pricing */}
+        <section className="py-24 px-4 bg-black/40">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
+              No hidden fees. Pay for what you need, scale as you grow.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="glass-card p-8 rounded-2xl text-center hover:scale-105 transition-all">
+                <h3 className="text-2xl font-bold mb-2">Monthly</h3>
+                <p className="text-3xl font-bold text-blue-400 mb-4">$15</p>
+                <p className="text-slate-400 mb-6">/month</p>
+                <p className="text-sm text-slate-500 mb-6">
+                  Perfect for getting started. Full access, billed monthly.
+                </p>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center gap-2">✅ 10,000+ Live Channels</li>
+                  <li className="flex items-center gap-2">✅ HD & 4K Streaming</li>
+                  <li className="flex items-center gap-2">✅ Multi-Screen Support</li>
+                  <li className="flex items-center gap-2">✅ Electronic Program Guide</li>
+                  <li className="flex items-center gap-2">✅ 24/7 Customer Support</li>
+                  <li className="flex items-center gap-2">✅ Cancel Anytime</li>
+                </ul>
+                <button className="mt-8 w-full py-3 rounded-xl border border-blue-500 hover:bg-blue-500/20 transition">
+                  Get Started
+                </button>
+              </div>
+              <div className="glass-card p-8 rounded-2xl text-center border-blue-500 scale-105 hover:scale-110 transition-all relative">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 px-4 py-1 rounded-full text-sm">
+                  Most Popular
+                </div>
+                <h3 className="text-2xl font-bold mb-2">6-Month Plan</h3>
+                <p className="text-3xl font-bold text-blue-400 mb-4">$80</p>
+                <p className="text-slate-400 mb-6">/6 months</p>
+                <p className="text-sm text-slate-500 mb-6">
+                  Save over 10% with our semi-annual plan. Most popular for businesses.
+                </p>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center gap-2">✅ 10,000+ Live Channels</li>
+                  <li className="flex items-center gap-2">✅ HD & 4K Streaming</li>
+                  <li className="flex items-center gap-2">✅ Multi-Screen Support</li>
+                  <li className="flex items-center gap-2">✅ Electronic Program Guide</li>
+                  <li className="flex items-center gap-2">✅ Priority 24/7 Support</li>
+                  <li className="flex items-center gap-2">✅ VOD Library Access</li>
+                  <li className="flex items-center gap-2">✅ Dedicated Account Manager</li>
+                </ul>
+                <button className="mt-8 w-full py-3 rounded-xl bg-blue-500 hover:bg-blue-600 transition">
+                  Get Best Value
+                </button>
+              </div>
+              <div className="glass-card p-8 rounded-2xl text-center hover:scale-105 transition-all">
+                <h3 className="text-2xl font-bold mb-2">Annual Plan</h3>
+                <p className="text-3xl font-bold text-blue-400 mb-4">$120</p>
+                <p className="text-slate-400 mb-6">/year</p>
+                <p className="text-sm text-slate-500 mb-6">
+                  Maximum savings with our annual commitment. Best for established operations.
+                </p>
+                <ul className="space-y-3 text-left">
+                  <li className="flex items-center gap-2">✅ 10,000+ Live Channels</li>
+                  <li className="flex items-center gap-2">✅ HD & 4K Streaming</li>
+                  <li className="flex items-center gap-2">✅ Multi-Screen Support</li>
+                  <li className="flex items-center gap-2">✅ Electronic Program Guide</li>
+                  <li className="flex items-center gap-2">✅ Priority 24/7 Support</li>
+                  <li className="flex items-center gap-2">✅ VOD Library Access</li>
+                  <li className="flex items-center gap-2">✅ Dedicated Account Manager</li>
+                  <li className="flex items-center gap-2">✅ Custom Channel Packages</li>
+                  <li className="flex items-center gap-2">✅ White-Label Options</li>
+                </ul>
+                <button className="mt-8 w-full py-3 rounded-xl border border-blue-500 hover:bg-blue-500/20 transition">
+                  Get Annual Plan
+                </button>
+              </div>
+            </div>
+            <div className="mt-16 text-center">
+              <p className="text-slate-400 mb-4">
+                Not sure yet? Start with a free 24-hour streaming trial — zero commitment.
+              </p>
+              <a
+                href="https://wa.me/18607702368?text=I%27m%20interested%20in%20a%2024-hour%20free%20trial"
+                className="inline-block rounded-xl bg-gradient-to-r from-green-500 to-blue-500 px-8 py-3 text-sm font-semibold text-slate-950 transition hover:scale-105"
+              >
+                Start Free 24-Hour Trial on WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <FAQ />
+          </ScrollReveal>
+        </section>
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <ScrollReveal>
+            <ContactSection />
+          </ScrollReveal>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}

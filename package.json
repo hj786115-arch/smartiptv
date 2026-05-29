@@ -1,0 +1,35 @@
+{
+  "name": "smartiptv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.5.0",
+    "@react-three/drei": "^9.109.0",
+    "@react-three/fiber": "^8.18.0",
+    "lenis": "^1.0.42",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.435.0",
+    "next": "15.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.35",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "15.3.1",
+    "typescript": "^5.6.2"
+  }
+}
