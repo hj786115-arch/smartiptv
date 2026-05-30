@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     title: 'Smart IPTV',
     description: 'Your TV, Done Right — 10,000+ Channels Delivered for enterprise operators.',
     type: 'website',
-    url: 'https://smart-iptv-pro--hj786115.replit.app/',
+    url: 'https://smartiptv-hj786115-9836s-projects.vercel.app/',
     images: [
       {
-        url: 'https://smart-iptv-pro--hj786115.replit.app/favicon.svg',
+        url: '/favicon.svg',
         width: 1200,
         height: 630,
         alt: 'Smart IPTV'
@@ -37,8 +37,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Smart IPTV',
-  url: 'https://smart-iptv-pro--hj786115.replit.app/',
-  logo: 'https://smart-iptv-pro--hj786115.replit.app/favicon.svg',
+  url: 'https://smartiptv-hj786115-9836s-projects.vercel.app/',
+  logo: 'https://smartiptv-hj786115-9836s-projects.vercel.app/favicon.svg',
   contactPoint: [
     {
       '@type': 'ContactPoint',
