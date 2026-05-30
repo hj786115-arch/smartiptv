@@ -5,9 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      // Agar aapke paas koi admin ya private pages hain, toh unhe yahan disallow kar sakte hain
-      // disallow: '/admin',
+      disallow: ['/admin', '/api/internal'],
     },
-    sitemap: 'https://smartiptv-ge2z9f2sk-hj786115-9836s-projects.vercel.app/sitemap.xml',
+    sitemap: 'https://smartiptv-hj786115-9836s-projects.vercel.app/sitemap.xml',
   }
 }
