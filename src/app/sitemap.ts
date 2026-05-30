@@ -1,10 +1,12 @@
-import { MetadataRoute } from 'next';
-
+import { MetadataRoute } from 'next'
+ 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://smart-iptv-pro--hj786115.replit.app/',
-      lastModified: new Date().toISOString()
-    }
-  ];
+      url: 'https://smartiptv-ge2z9f2sk-hj786115-9836s-projects.vercel.app',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 1,
+    },
+  ]
 }
