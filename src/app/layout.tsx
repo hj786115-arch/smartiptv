@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Smart IPTV | Your TV, Done Right — 10,000+ Channels Delivered',
-  description: 'Smart IPTV delivers enterprise IPTV for telecom, hotels, hospitals, and OTT partners. 10,000+ channels with 99.99% SLA and rapid deployment.',
+  description: 'Smart IPTV delivers enterprise IPTV for telecom, hotels, , and OTT partners. 10,000+ channels with 99.99% SLA and rapid deployment.',
   keywords: [
     'Smart IPTV',
     'enterprise IPTV',
